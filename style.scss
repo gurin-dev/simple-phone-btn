@@ -1,0 +1,34 @@
+.phone__button {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .phone__button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(334deg)
+      brightness(126%) contrast(93%);
+  }
+
+  .phone__button {
+    display: block;
+    position: fixed;
+    outline: none;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    background: #2db283;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .phone__button:hover {
+    box-shadow: 0 0 6px 2px #b6b6b6;
+    transition: 0.3s;
+  }
+}
